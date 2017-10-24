@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "756202901941",
+    "firebase_url": "https://icochat-376d7.firebaseio.com",
+    "project_id": "icochat-376d7",
+    "storage_bucket": "icochat-376d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756202901941:android:4f7af2db508c7c7c",
+        "android_client_info": {
+          "package_name": "com.betapoint.icoChat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756202901941-25ic49dvisl7l7n3f7k2iajbm0tsmm5q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.betapoint.icoChat",
+            "certificate_hash": "7fe61e56a40a10aa2526367d5e30de7a7141a7d1"
+          }
+        },
+        {
+          "client_id": "756202901941-v8vtoaj88i5833m07m3o5piakmfrc7em.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmFq2l0qVMptdaMok9iF_aK51tPRem1vc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756202901941-v8vtoaj88i5833m07m3o5piakmfrc7em.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
