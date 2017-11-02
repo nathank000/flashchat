@@ -24,6 +24,7 @@ public class MainChatActivity extends AppCompatActivity {
     private EditText mInputText;
     private ImageButton mSendButton;
     private DatabaseReference _dbRef;
+    private ChatListAdapter _adapter;
 
     private static final String TAG = "icoChat:: ";
 
@@ -73,7 +74,7 @@ public class MainChatActivity extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences(RegisterActivity.CHAT_PREFS, MODE_PRIVATE);
         mDisplayName = prefs.getString("username", null);
         if (mDisplayName == null) {
-            mDisplayName = "nathank000";
+            mDisplayName = "Anonymous";
         }
     }
 
@@ -93,6 +94,12 @@ public class MainChatActivity extends AppCompatActivity {
     }
 
     // TODO: Override the onStart() lifecycle method. Setup the adapter here.
+    @Override
+    public void onStart() {
+        super.onStart();
+        _adapter = new ChatListAdapter(this, _dbRef, mDisplayName);
+        mChatListView.setAdapter(_adapter);
+    }
 
 
     @Override
@@ -100,7 +107,7 @@ public class MainChatActivity extends AppCompatActivity {
         super.onStop();
 
         // TODO: Remove the Firebase event listener on the adapter.
-
+        _adapter.cleanUp();
     }
 
 }
